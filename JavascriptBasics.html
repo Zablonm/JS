@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1>JavaScript Basics Examples</h1>
+
+    <!-- Introduction -->
+    <script>
+        alert("Welcome to JavaScript!");
+    </script>
+
+    <!-- Syntax and Variables -->
+    <h2>Syntax and Variables</h2>
+    <script>
+        let name = "Alice"; // Variable declaration
+        console.log("Hello " + name); // Outputs: Hello Alice
+    </script>
+
+    <!-- Data Types -->
+    <h2>Data Types</h2>
+    <script>
+        let isSunny = true; // Boolean
+        let temperature = 25; // Number
+        let message = "It is sunny today."; // String
+        console.log(isSunny, temperature, message);
+    </script>
+
+    <!-- Functions -->
+    <h2>Functions</h2>
+    <script>
+        function greet(name) {
+            return "Hello, " + name;
+        }
+        console.log(greet("Alice")); // Outputs: Hello, Alice
+    </script>
+
+    <!-- Conditional Statements -->
+    <h2>Conditional Statements</h2>
+    <script>
+        let age = 18;
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are a minor.");
+        }
+
+        let day = 3;
+        switch (day) {
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            default:
+                console.log("Other day");
+        }
+    </script>
+
+    <!-- Loops -->
+    <h2>Loops</h2>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            console.log("Iteration: " + i);
+        }
+
+        let count = 0;
+        while (count < 5) {
+            console.log("Count: " + count);
+            count++;
+        }
+    </script>
+
+    <!-- DOM Manipulation -->
+    <h2>DOM Manipulation</h2>
+    <p id="demo">Hello</p>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "You clicked the button!";
+        }
+    </script>
+
+    <!-- Event Handling -->
+    <h2>Event Handling</h2>
+    <button id="btn">Click Me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>
